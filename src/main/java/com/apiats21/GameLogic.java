@@ -1,4 +1,22 @@
 package main.java.com.apiats21;
+/*Field: приватные поля и методы для доступа к ним?
+
+GameLogic: создать обьект  класса field?
+две ячейки
+минимум 7 методов
+1. get user input
+2. валидировать код?
+3. get pc input
+4. валидировать код?
+5.
+6.
+7.  счет игры, продолжить игу...
+Как в метод compareMoves передать returns методов userMove() и compMove()
+
+Game runner:
+только обьект класса GameLogic
+метод startGame() и все
+ */
 
 import java.util.Random;
 import java.util.Scanner;
