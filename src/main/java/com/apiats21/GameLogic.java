@@ -26,12 +26,17 @@ public class GameLogic {
     int randNum;
     Win winner;
 
+    Field fl = new Field();
+
     public void intro() {
-        Field.welcomeMess();
+        fl.welcomeMess();
     }
     public void userOpt() {
         Scanner sc = new Scanner(System.in);
         this.userMove = sc.nextInt();
+        Field.Figure userMove = Field.Figure.values()[sc.nextInt()-1];
+
+
     }
     public void compMove() {
         this.randNum = new Random().nextInt(3) + 1;
@@ -44,7 +49,15 @@ public class GameLogic {
         else winner = Win.Computer;
     }
     public void prntResults() {
-        System.out.println("Your move: " + Field.values()[userMove-1] + "\nComputer move: " + Field.values()[randNum-1]);
+        System.out.println("Your move: " + Field.Options.values()[userMove-1] + "\nComputer move: " +
+                            Field.Options.values()[randNum-1]);
         System.out.println("Winner is " + winner);
+    }
+    public void start() {
+        intro();
+        userOpt();
+        compMove();
+        compare();
+        prntResults();
     }
 }
