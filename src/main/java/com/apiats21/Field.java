@@ -1,8 +1,12 @@
 package main.java.com.apiats21;
 
+
 public class Field {
 
-    public enum Figure {f1, f2}
+
+    public enum Figure {Rock, Scissors, Paper}
+
+
 
     public enum Options {Rock, Scissor, Paper}
 
