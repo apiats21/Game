@@ -11,8 +11,9 @@ public class GameLogic {
 
     Field fl = new Field();
 
-    public void intro() {
-        fl.welcomeMess();
+    public void welcomeMess() {
+        System.out.println("Welcome to the game!!!");
+        System.out.println("Please select: \n 1. Rock\n 2. Paper\n 3. Scissors");
     }
 
     public void setUserMove() {
@@ -42,9 +43,8 @@ public class GameLogic {
         System.out.println("Winner is " + winner);
     }
 
-
     public void start() {
-        intro();
+        welcomeMess();
         setUserMove();
         setCompMove();
         compare();

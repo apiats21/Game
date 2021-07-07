@@ -22,11 +22,5 @@ public class Field {
     public void setF2(Figure f2) {
         this.f2 = f2;
     }
-
-
-    public void welcomeMess() {
-        System.out.println("Welcome to the game!!!");
-        System.out.println("Please select: \n 1. Rock\n 2. Paper\n 3. Scissors");
-    }
 }
 
